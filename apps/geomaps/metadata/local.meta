@@ -1,0 +1,46 @@
+[app/ui]
+version = 8.2.3
+modtime = 1638190172.150310000
+
+[app/launcher]
+version = 8.2.3
+modtime = 1638190172.153362000
+
+[indexes/uni_lu]
+owner = admin
+version = 8.2.3
+modtime = 1638190644.693466000
+
+[transforms/ca_county_lookup]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = admin
+version = 8.2.3
+modtime = 1638191288.966431000
+
+[lookups/ca_counties.kmz]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 8.2.3
+modtime = 1638194471.630616000
+
+[lookups/ca-county-boundaries.csv]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 8.2.3
+modtime = 1638194458.353260000
+
+[lookups/ca-county-lat-lon.csv]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 8.2.3
+modtime = 1638194465.209694000
+
+[transforms/ca-county-lat-lon]
+export = system
+owner = admin
+version = 8.2.3
+modtime = 1638193063.186908000
