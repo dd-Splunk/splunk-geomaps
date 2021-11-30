@@ -13,10 +13,10 @@ modtime = 1638190644.693466000
 
 [transforms/ca_county_lookup]
 access = read : [ * ], write : [ admin, power ]
-export = system
-owner = admin
+export = none
+owner = nobody
 version = 8.2.3
-modtime = 1638191288.966431000
+modtime = 1638282681.883692000
 
 [lookups/ca_counties.kmz]
 access = read : [ * ], write : [ admin, power ]
@@ -40,10 +40,11 @@ version = 8.2.3
 modtime = 1638194465.209694000
 
 [transforms/ca-county-lat-lon]
-export = system
-owner = admin
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
 version = 8.2.3
-modtime = 1638193063.186908000
+modtime = 1638282675.725145000
 
 [app/install/install_source_checksum]
 version = 8.2.3
@@ -52,3 +53,14 @@ modtime = 1638280845.388753000
 [nav/default]
 version = 8.2.3
 modtime = 1638281006.489194000
+
+[views/geo]
+version = 8.2.3
+modtime = 1638282496.963875000
+
+[lookups/ca_drought_monitor.csv]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 8.2.3
+modtime = 1638282562.993958000
