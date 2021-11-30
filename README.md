@@ -21,4 +21,4 @@ Splunk will ask to restart, just proceed with it.
 
 Then open the Geomaps app. The initial view should be similar to the following:
 
-![InitialView](InitialView.png)
+![InitialView](apps/pictures/InitialView.png)
