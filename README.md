@@ -2,6 +2,8 @@
 
 Demonstrate the use of choropleth and cluster visualizations
 
+The app follows the instructions found in the [Splunk Documentation](https://docs.splunk.com/Documentation/Splunk/latest/Viz/GenerateMap).
+
 ## To create the app itself
 
 Open a terminal and:
@@ -17,4 +19,6 @@ Then go to your Splunk instance and upload the newly created `geomaps.spl` file.
 
 Splunk will ask to restart, just proceed with it.
 
-Then open the Geomaps app, go to the Dashboards section and select the `Geo` dashboard.
+Then open the Geomaps app. The initial view should be similar to the following:
+
+![InitialView](InitialView.png)
