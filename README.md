@@ -10,7 +10,7 @@ Open a terminal and:
 # Go to the apps folder
 cd apps
 # Package the app into an .spl file
-tar --exclude='.*' -cvzf geomaps.spl geomaps/
+tar --exclude='.*' -cvzf geomaps.spl geomaps/*
 ```
 
 Then go to your Splunk instance and upload the newly created `geomaps.spl` file.
