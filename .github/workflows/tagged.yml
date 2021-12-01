@@ -15,10 +15,10 @@ jobs:
       # ...
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build
-        run: echo ${{ github.sha }} > Release.txt
-      - name: Test
-        run: cat Release.txt
+      # - name: Build
+      #   run: echo ${{ github.sha }} > Release.txt
+      # - name: Test
+      #   run: cat Release.txt
       - name: Create spl
         run: |
           cd apps 
@@ -29,5 +29,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            Release.txt
             geomaps.spl
