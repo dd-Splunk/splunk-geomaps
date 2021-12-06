@@ -29,6 +29,7 @@ jobs:
           echo ${GITHUB_REF}
           echo $RELEASE_VERSION
           echo ${{ steps.vars.outputs.tag }}
+          sed -i -e "s/version =.*/version = $RELEASE_VERSION/" apps/geomaps/default/app.conf
       - name: Create spl
         run: |
           cd apps 
