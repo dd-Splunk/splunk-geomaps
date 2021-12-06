@@ -19,6 +19,9 @@ jobs:
       #   run: echo ${{ github.sha }} > Release.txt
       # - name: Test
       #   run: cat Release.txt
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       - name: Check output
         env:
           RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
