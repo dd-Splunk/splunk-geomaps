@@ -1,0 +1,12 @@
+version: "3.6"
+
+services:
+  so1:
+    image: ${SPLUNK_IMAGE:-splunk/splunk:latest}
+    container_name: so1
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_APPS_URL=https://github.com/dd-Splunk/splunk-geomaps/releases/latest/download/geomaps.spl 
+      - SPLUNK_PASSWORD
+    ports:
+      - 8000:8000
