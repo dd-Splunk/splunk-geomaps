@@ -15,26 +15,19 @@ jobs:
       # ...
       - name: Checkout
         uses: actions/checkout@v2
-      # - name: Build
-      #   run: echo ${{ github.sha }} > Release.txt
-      # - name: Test
-      #   run: cat Release.txt
-      - name: Set output
+      - name: Get version from tag
         id: vars
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/v}
-      - name: Check output
+      - name: Set Splunk app version
         env:
           RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
         run: |
-          echo ${GITHUB_REF}
           echo $RELEASE_VERSION
-          echo ${{ steps.vars.outputs.tag }}
           sed -i -e "s/version =.*/version = $RELEASE_VERSION/" apps/geomaps/default/app.conf
       - name: Create spl
         run: |
           cd apps 
           tar -cvzf ../geomaps.spl geomaps/*
-
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
