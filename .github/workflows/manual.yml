@@ -12,8 +12,9 @@ jobs:
       - name: "Push App"
         env:
           PASSWORD: ${{secrets.SPLUNK_PASSWORD}}
+          HOST: ${{secrets.SPLUNK_HOST}}
         run: |
-          curl -1 -s -k -u admin:$PASSWORD https://ec2-34-201-50-253.compute-1.amazonaws.com:8089/services/apps/local -d name=https://github.com/dd-Splunk/splunk-geomaps/releases/latest/download/geomaps.spl -d filename=true
+          curl -1 -s -k -u admin:$PASSWORD https://$HOST:8089/services/apps/local -d name=https://github.com/dd-Splunk/splunk-geomaps/releases/latest/download/geomaps.spl -d filename=true
 
 
 
