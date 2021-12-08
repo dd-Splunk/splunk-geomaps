@@ -1,0 +1,18 @@
+---
+name: "install app to splunk"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  install-app:
+    name: "Install App"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Push App"
+        run: |
+          curl -1 -s -k -u admin:SPLUNK-i-0eaac5f336983d55c https://ec2-34-201-50-253.compute-1.amazonaws.com:8089/services/apps/local -d name=https://github.com/dd-Splunk/splunk-geomaps/releases/latest/download/geomaps.spl -d filename=true
+
+
+
+    
