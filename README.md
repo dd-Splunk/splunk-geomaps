@@ -9,11 +9,22 @@ The app itself is avalable as a release labeled "latest".
 To download the `geomaps.spl` file use: https://github.com/dd-Splunk/splunk-geomaps/releases/latest/download/geomaps.spl 
 
 Then go to your Splunk instance and upload the file.
-Splunk will ask to restart, just proceed with it.
+Splunk might ask to restart, just proceed with it.
 
-After opening the Geomaps app, the initial view should be similar to the following:
+After opening the Geo Maps app, the initial view should be similar to the following:
 
 ![InitialView](apps/pictures/InitialView.png)
+
+
+
+## Dashboard Studio map
+
+A Dashboard Studion version of the first map is also available under the Dashboards tab.
+It will render like this:
+
+![GeoStudio](apps/pictures/GeoStudio.png)
+
+
 
 ## To publish a new version of the app
 
@@ -28,7 +39,8 @@ This will initiate a new packaging of the app while embedding the version in the
 
 ## Testing with Docker
 
-A `docker-compose.yml`is included. Execute the following to bring up your deployment:
+A `docker-compose.yml`is included. 
+Execute the following to bring up your deployment:
 
 ```bash
 $ SPLUNK_PASSWORD=<password> docker-compose up -d
