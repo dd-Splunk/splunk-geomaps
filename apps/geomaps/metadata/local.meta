@@ -64,3 +64,16 @@ export = none
 owner = nobody
 version = 8.2.3
 modtime = 1638282562.993958000
+
+
+[lookups/US_drought_monitor.csv]
+export = none
+owner = admin
+version = 8.2.3.2
+modtime = 1639574110.067270000
+
+[views/geo_studio]
+export = none
+owner = nobody
+version = 8.2.3.2
+modtime = 1639579039.043237000
