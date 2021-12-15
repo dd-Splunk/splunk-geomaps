@@ -19,7 +19,7 @@ After opening the Geo Maps app, the initial view should be similar to the follow
 
 ## Dashboard Studio map
 
-A Dashboard Studion version of the first map is also available under the Dashboards tab.
+A Dashboard Studio version of the first map is also available under the Dashboards tab.
 It will render like this:
 
 ![GeoStudio](apps/pictures/GeoStudio.png)
