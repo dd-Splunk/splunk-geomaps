@@ -10,3 +10,4 @@ docker cp so1:$APP_LOCATION .
 echo "Expanding ${APP_FILE} ..."
 tar -xf ${APP_FILE} -C apps/
 echo "Done."
+#
